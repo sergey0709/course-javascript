@@ -1,0 +1,156 @@
+
+    html, body, #app {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    ::placeholder {
+      padding: 5px 10px;
+    }
+
+    #app {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        border: 2px solid orange;
+        border-radius: 5px;
+        position: relative;
+        top: 10vh;
+        min-width: 40vw;
+        width: 50vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header-container {
+      background: #FE8663;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      padding: 14px;
+    }
+
+    .lists {
+        display: flex;
+        height: 71%;
+    }
+
+    .list {
+        flex-grow: 1;
+        flex-basis: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .list-filter {
+        padding: 10px 0;
+        display: flex;
+        background: #F0F0F0;
+    }
+
+    .list-filter input {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        margin: 0 14px 0 14px;
+        border-radius: 40px;
+        border: transparent;
+    }
+
+
+    .list-items {
+        flex-grow: 1;
+        overflow-y: scroll;
+    }
+
+    .list-header {
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Roboto';
+        font-size: 12px;
+        line-height: 14px;
+        color: #505050;
+        padding: 10px 20px;
+        border-bottom: 1px solid #F0F0F0;
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .list-item-clone {
+        background: #F0F0F0;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .list-item:hover {
+        background: #F0F0F0;
+        cursor: default;
+    }
+
+    .list-item-photo {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    .list-item-name {
+        flex-grow: 1;
+        padding: 0 15px;
+        font-family: 'Fira Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #505050;
+
+    }
+
+    .list-item-swap,
+    .list-item-swap:hover,
+    .list-item-swap:active,
+    .list-item-swap:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    .all-friends .list-item-swap:after {
+      display: block;
+      content: "";
+      background: url(./Vector.png) no-repeat;
+      background-size: cover;
+      width: 16px;
+      height: 25px;
+    }
+
+    .best-friends .list-item-swap:after {
+        display: block;
+        content: "";
+        background: url(./close.png) no-repeat;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer-container {
+      width: 100%;
+      height: 45px;
+      background: #F0F0F0;
+    }
+
+    .all-friends {
+      border-right: 1px solid #F0F0F0;
+    }
